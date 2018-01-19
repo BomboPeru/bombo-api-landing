@@ -24,6 +24,9 @@
   },
   "dependencies": {
     "aphrodite": "^1.2.5",
+    "bloomer": "^0.6.3",
+    "bulma": "^0.6.2",
+    "bulma-start": "^0.0.2",
     "glamor": "^2.20.40",
     "glamorous": "^4.11.4",
     "preact": "^8.2.6",
