@@ -1,4 +1,7 @@
 import { h, Component } from 'preact';
+import glamorous from 'glamorous'
+
+import GlobalStyle from '../assets/styles/global_style'
 
 export default class Home extends Component {
   constructor(props) {
@@ -7,9 +10,9 @@ export default class Home extends Component {
 
   render() {
     return (
-        <div>
-            <h1>Hello theaare</h1>
-        </div>
+        <GlobalStyle>
+            Click me!
+        </GlobalStyle>
     );
   }
 }
