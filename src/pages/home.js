@@ -1,7 +1,11 @@
 import { h, Component } from 'preact';
 import glamorous from 'glamorous'
 
+import 'bulma/css/bulma.css'
+
 import GlobalStyle from '../assets/styles/global_style'
+
+import Toolbar from '../components/toolbar'
 
 export default class Home extends Component {
   constructor(props) {
@@ -11,7 +15,8 @@ export default class Home extends Component {
   render() {
     return (
         <GlobalStyle>
-            Click me!
+            <Toolbar/>
+
         </GlobalStyle>
     );
   }
