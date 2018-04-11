@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import glamorous from 'glamorous';
 import { StyleSheet, css } from 'aphrodite';
-import { Container, Box, Columns, Column, Notification } from 'bloomer';
+import { Container, Box, Button, Columns, Column, Notification } from 'bloomer';
 
 class Toolbar extends Component {
     constructor(props) {
@@ -31,10 +31,14 @@ class Toolbar extends Component {
                     </Notification>
                 </Column>
                 <Column>
-                    <Notification isColor="primary" hasTextAlign="centered">
-                        {' '}
-                        Fourth column{' '}
-                    </Notification>
+                  <Button isColor='info' render={
+                    props => <Column hasTextAlign='centered'><p {...props}>Button</p></Column>
+                  } />
+
+                  {/*<Notification isColor="primary" hasTextAlign="centered">*/}
+                        {/*{' '}*/}
+                        {/*Fourth column{' '}*/}
+                    {/*</Notification>*/}
                 </Column>
             </Columns>
         );
